@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magento_Backend::system">
+                    <resource id="Talexan_UsersList::acl_main" title="Talexan Users" translate="title" sortOrder="90">
+                        <resource id="Talexan_UsersList::acl_listing" title="Users List" translate="title" sortOrder="10"/>
+                        <resource id="Talexan_UsersList::acl_save" title="Save User" translate="title" sortOrder="20"/>
+                        <resource id="Talexan_UsersList::acl_edit" title="Edit User" translate="title" sortOrder="30"/>
+                        <resource id="Talexan_UsersList::acl_delete" title="Delete User" translate="title" sortOrder="40"/>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

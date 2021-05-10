@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="talexan_userslist_table" resource="default" engine="innodb" comment="Talexan User Table">
+        <column xsi:type="int" name="id" unsigned="true" nullable="false" identity="true"
+                comment="Id users"/>
+        <column xsi:type="varchar" name="fname" nullable="true" length="32" comment="User First Name"/>
+        <column xsi:type="varchar" name="lname" nullable="true" length="32" comment="User Last Name"/>
+        <column xsi:type="varchar" name="email" nullable="true" length="128" comment="User Email"/>
+        <column xsi:type="timestamp" name="cdate" on_update="false" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="User Created Time"/>
+        <column xsi:type="timestamp" name="udate" on_update="true" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="User Modified Time"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>
+        <index referenceId="TALEXAN_USERS_LISR_ID" indexType="fulltext">
+            <column name="fname"/>
+            <column name="lname"/>
+            <column name="email"/>
+        </index>
+    </table>
+</schema>

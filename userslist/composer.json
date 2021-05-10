@@ -1,0 +1,38 @@
+{
+    "name": "talexan/module-userslist",
+    "description": "Training extension for Magento 2",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Talexan",
+            "email": "",
+            "homepage": "",
+            "role": "Trainee"
+        }
+    ],
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "keywords": [
+        "magento 2",
+        "list of users",
+        "beginer"
+    ],
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magento/framework": "103.0.*",
+        "magento/module-backend": "102.0.*",
+        "magento/module-ui": "101.2.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php",
+        ],
+        "classmap": ["../../app/code/talexan/module-userslist/", "../../generated/code/talexan/userslist"],
+        "psr-4": {
+            "Talexan\\UsersList\\": ""
+        }
+    }
+}

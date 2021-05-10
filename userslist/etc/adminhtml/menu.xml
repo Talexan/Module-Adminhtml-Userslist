@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Talexan_UsersList::main" title="Talexan Ext." translate="title" module="Talexan_UsersList" sortOrder="90" parent="Magento_Backend::system" resource="Talexan_UsersList::acl_main"/>
+        <add id="Talexan_UsersList::users_listing" title="Listing Of Users" translate="title" module="Talexan_UsersList" sortOrder="10" parent="Talexan_UsersList::main" action="adminhtml/grid" resource="Talexan_UsersList::acl_listing"/>
+    </menu>
+</config>

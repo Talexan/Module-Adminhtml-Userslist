@@ -1,0 +1,18 @@
+{
+    "talexan_userslist_table": {
+        "column": {
+            "id": true,
+            "fname": true,
+            "lname": true,
+            "email": true,
+            "cdate": true,
+            "udate": true
+        },
+        "index": {
+            "TALEXAN_USERSLIST_TABLE_FNAME_LNAME_EMAIL": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
